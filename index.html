@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -53,7 +54,7 @@
     <main>
         <section class="banner">
             <div class="container">
-                <div class="banner-info">
+                <div  data-aos="zoom-in" data-aos-duration="1500" class="banner-info">
                     <h1 class="banner-info_title">Большой гамбургер</h1>
                     <span class="banner-info_subtitle">говядина</span>
                     <p class="banner-info_text">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и
@@ -80,7 +81,9 @@
             </div>
             <div class="catalog-list">
                 <div class="catalog-container">
-                    <div class="catalog-content">
+                    <div class="catalog-content " data-aos="zoom-in-down"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <div class="catalog-content_card content-card">
                             <div class="content-card_img">
                                 <img src="./images/unnamed 1.png" alt="">
@@ -184,10 +187,11 @@
     <footer class="page-footer">
         <div class="container">
             <div class="footer-top">
-                <a href="#!" class="footer-top_logo">STREET 88</a>
-                <a href="tel: +998 90 132 45 67" class="footer-top_phone" >+998 90 132 45 67</a>
+                <a href="#!" data-aos="zoom-in-right" data-aos-duration="1500" class="footer-top_logo">STREET 88</a>
+                <a href="tel: +998 90 132 45 67" data-aos="zoom-in-left" data-aos-duration="1500" class="footer-top_phone" >+998 90 132 45 67</a>
             </div>
-            <nav class="footer-nav">
+            <nav class="footer-nav" data-aos="fade-up"
+            data-aos-duration="1500">
                 <a href="#!" class="footer-nav_link">Меню</a>
                 <a href="#!" class="footer-nav_link">О нас</a>
                 <a href="#!" class="footer-nav_link">Контакты</a>
@@ -198,6 +202,12 @@
         </div>
 
     </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
